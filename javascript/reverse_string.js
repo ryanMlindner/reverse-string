@@ -1,5 +1,10 @@
 function reverseString(str) {
-  // type your code here
+  const length = str.length
+  newStr = ""
+  for (let index = length; index > 0; index--) {
+    newStr = newStr + str.charAt(index - 1)
+  }
+  return newStr
 }
 
 if (require.main === module) {
